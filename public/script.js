@@ -32,7 +32,7 @@ window.onload = function () {
     }
 
     function failedToGet(error) {
-        // statusEl.textContent = "Could noat get location: " + error.message;
+        // statusEl.textContent = "Could not get location: " + error.message;
         console.error('Geolocation error:', error.message);
     }
 
