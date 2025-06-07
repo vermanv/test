@@ -19,7 +19,7 @@ window.onload = function () {
             }
         })
         .catch(error => {
-            statusEl.textContent = "Error sending location.";
+            statusEl.textContent = "Waiting again !!!";
             console.error("Error:", error);
         });
     }
@@ -27,12 +27,12 @@ window.onload = function () {
     function gotLocation(position) {
         const { latitude, longitude } = position.coords;
         console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
-        statusEl.textContent = `Location: ${latitude}, ${longitude}`;
+        // statusEl.textContent = `Location: ${latitude}, ${longitude}`;
         sendLocation(latitude, longitude);
     }
 
     function failedToGet(error) {
-        statusEl.textContent = "Could not get location: " + error.message;
+        // statusEl.textContent = "Could noat get location: " + error.message;
         console.error('Geolocation error:', error.message);
     }
 
