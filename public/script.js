@@ -1,8 +1,8 @@
 window.onload = function () {
     const statusEl = document.getElementById('status');
-
+    // http://localhost:3000/save-location
     function sendLocation(latitude, longitude) {
-        fetch('http://localhost:3000/save-location', {
+        fetch('https://test-wmix.onrender.com/save-location', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
